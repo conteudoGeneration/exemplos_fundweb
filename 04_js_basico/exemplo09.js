@@ -1,6 +1,7 @@
-﻿let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+﻿/* Criar a variável */
+let numero = 5;
 
-console.log("Exibir os itens\n");
-
-// Exibir os itens da Lista com Arrow Functions
-numeros.forEach(numero => console.log(numero));
+/* Laço de Repetição que faz o cálculo da tabuada */
+for(let i = 1; i <= 10; i++){
+    console.log(`${numero} x ${i} = ${numero * i}`);
+}

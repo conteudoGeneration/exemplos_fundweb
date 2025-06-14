@@ -1,5 +1,6 @@
-﻿const numeros: Array<number> = new Array<number> (1, 2, 3, 4, 5, 6);
+﻿const numeros: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-const [um, dois, ...resto] = numeros;
+console.log("Exibir os itens\n");
 
-console.log(numeros)
+// Exibir os itens da lista com Arrow Function
+numeros.forEach((numero: number): void => console.log(numero));

@@ -1,7 +1,5 @@
-﻿function subtrair(numero1: number, numero2: number): number {
-    return numero1 - numero2
-}
+﻿export const usuario: { nome: string } = { nome: "João da Silva" };
 
-let resultado: number = subtrair(20, 10);
+usuario.nome = "João da Silva Junior";
 
-console.log(resultado);
+console.log("O Nome do Usuário é:", usuario.nome);

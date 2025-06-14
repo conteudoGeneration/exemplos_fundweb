@@ -1,11 +1,9 @@
-﻿function listarPessoa(nome: string, idade: number) {
-    return {
-      nome,
-      idade,
-    };
-  }
-  
-  const tupla: [string, number] = ['Márcia da Silva', 30];
-  
-  console.log(listarPessoa(...tupla));
-  
+﻿function somarNumeros(...numbers: number[]): number {
+    let soma = 0;
+    numbers.forEach((numero) => soma += numero);
+    return soma;
+}
+
+console.log("Soma:", somarNumeros());
+console.log("Soma:", somarNumeros(10, 20));
+console.log("Soma:", somarNumeros(10, 20, 30));

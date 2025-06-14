@@ -1,9 +1,14 @@
-﻿function somarNumeros(...numbers: number[]): number {
-    let total = 0;
-    numbers.forEach((num) => total += num);
-    return total;
+﻿function tabuada(numero: number): void {
+
+    for (let contador = 1; contador <= 10; contador++){
+        
+        let resultado = numero * contador;
+        console.log(`${numero} x ${contador} = ${resultado}`);
+
+    }
+        
 }
 
-console.log(somarNumeros());
-console.log(somarNumeros(10, 20));
-console.log(somarNumeros(10, 20, 30));
+console.log("Tabuada:\n");
+
+tabuada(5);

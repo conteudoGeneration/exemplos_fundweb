@@ -1,6 +1,13 @@
-﻿const array01: Array<number> = new Array<number> (1, 2, 3);
-const array02: Array<number> = new Array<number> (4, 5, 6);
+﻿function somar(numero1: number, numero2: number, numero3?: number): number{
+    
+    if(numero3 != undefined)
+        return numero1 + numero2 + numero3;
 
-const arrayCombinado = [...array01, ...array02];
+    return numero1 + numero2;
+}
 
-console.log(arrayCombinado);
+const resultado1 = somar(10, 20);
+console.log(`Primeira Soma: ${resultado1}`);
+
+const resultado2 = somar(10, 20, 30);
+console.log(`Segunda Soma: ${resultado2}`);

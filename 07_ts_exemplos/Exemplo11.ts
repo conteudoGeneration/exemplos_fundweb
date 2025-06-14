@@ -1,17 +1,15 @@
-﻿interface Pessoa{
-    nome: string;
-    sobrenome: string;
+﻿function listarNomes(...nomes: string[]): void {
+    if (nomes.length === 0) {
+        console.log("Nenhum nome foi informado.");
+        return;
+    }
+
+    console.log("\nLista de nomes:\n");
+    nomes.forEach((nome, index) => {
+        console.log(`${index + 1}. ${nome}`);
+    });
 }
 
-let pessoa1 = {
-    nome: 'Maria',
-    sobrenome: 'Simões'
-}
-
-let pessoa2 = {
-    nome: 'Juliana',
-    sobrenome: 'Silva'
-}
-
-console.log(pessoa1);
-console.log(pessoa2);
+listarNomes();
+listarNomes("Ana"); 
+listarNomes("Carlos", "Beatriz", "Fernando", "Juliana"); 

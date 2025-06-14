@@ -1,9 +1,4 @@
-﻿/* Criar as variável */
-let nome = "Sabrina";
-let altura = 1.80;
+﻿const estado = "São Paulo";
+console.log("Estado:", estado);
 
-/* Concatenação de strings */
-console.log(nome + " possui " + altura + " de altura.");
-
-/* Interpolação de strings */
-console.log(`${nome} possui ${altura} de altura.`);
+estado = "Rio de Janeiro";
