@@ -1,9 +1,4 @@
-﻿/* Criar as variável */
-let nome = "Sabrina";
-let altura = 1.80;
+﻿const usuario = { nome: "João da Silva" };
 
-/* Concatenação de strings */
-console.log(nome + " possui " + altura + " de altura.");
-
-/* Interpolação de strings */
-console.log(`${nome} possui ${altura} de altura.`);
+usuario = { nome: "João da Silva Junior"};
+console.log("O Nome do Usuário é: ", usuario.nome);

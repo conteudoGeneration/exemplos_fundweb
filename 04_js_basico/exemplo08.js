@@ -1,13 +1,9 @@
-﻿/* Criar as variáveis */
-let numero_01 = 10, numero_02 = 0;
+/* Criar as variáveis */
+let numero = 10;
+let texto = "10";
 
-/* Executa as 4 Operações Matemáticas */
-console.log(`Soma: ${numero_01 + numero_02}`);
-console.log(`Subtração: ${numero_01 - numero_02}`);
-console.log(`Multiplicação: ${numero_01 * numero_02}`);
+/* Comparação com igualdade (==) */
+console.log(numero == texto);
 
-/* Verifica o segundo valor antes de executar a divisão*/
-if(numero_02 === 0)
-    console.log("Não existe divisão por 0");
-else
-    console.log(`Divisão: ${numero_01 / numero_02}`);
+/* Comparação com igualdade estrita (===) */
+console.log(numero === texto);

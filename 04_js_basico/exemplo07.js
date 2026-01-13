@@ -1,8 +1,9 @@
-﻿/* Criar as variáveis */
-let numero_01 = 10, numero_02 = 5;
+﻿/* Criar as variável */
+let nome = "Sabrina";
+let altura = 1.80;
 
-/* Executar as 4 Operações Matemáticas */
-console.log(`Soma: ${numero_01 + numero_02}`);
-console.log(`Subtração: ${numero_01 - numero_02}`);
-console.log(`Multiplicação: ${numero_01 * numero_02}`);
-console.log(`Divisão: ${numero_01 / numero_02}`);
+/* Concatenação de strings */
+console.log(nome + " possui " + altura + " de altura.");
+
+/* Interpolação de strings */
+console.log(`${nome} possui ${altura} de altura.`);

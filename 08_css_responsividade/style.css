@@ -1,0 +1,52 @@
+/* Estilos gerais para todos os dispositivos */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-color: #f4f4f4;
+}
+
+.header {
+  background-color: #6200ea;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  background-color: #fff;
+  padding: 1.5rem;
+  flex: 1;
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Smartphones (até 480px) */
+@media (max-width: 480px) {
+  body {
+    font-size: 15px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
+
+/* Tablets e desktops (a partir de 769px) */
+@media (min-width: 769px) {
+  body {
+    font-size: 18px;
+  }
+
+  .container {
+    flex-direction: row;
+  }
+}

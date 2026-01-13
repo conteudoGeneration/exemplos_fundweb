@@ -1,16 +1,24 @@
 try {
     
-    // Tenta converter um número em letras maiúsculas
-    const resultado = converte(123);
+    let idade = 15;
 
-    console.log(resultado);
+    // Tenta validar a idade com a função validarIdade
+    validarIdade(idade);
 
 } catch (error) {
-    // Captura o erro e informa ao usuário
-    console.error("Não é possível converter para letras maiúsculas!");
+    // Caso a iade não seja validada, 
+    // exibe a mensagem de erro (message)
+    // e finaliza o programa
+    console.error(error.message);
 }
 
-// Função para formatar uma string com todas as letras maiúsculas
-function converte(conteudo){
-    return conteudo.toUpperCase();
+function validarIdade(idade) {
+
+    if (idade < 18)
+        // Se a idade for menor do que 18, a função lança uma Exceção
+        throw new Error("A Pessoa não está apta a dirigir!");
+    else
+        // Caso contráro, exibe a mensagem abaixo
+        console.log("A Pessoa está apta a dirigir!");
+
 }

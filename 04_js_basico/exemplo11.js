@@ -1,6 +1,16 @@
-﻿let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+try {
+    
+    // Tenta converter um número em letras maiúsculas
+    const resultado = converte(123);
 
-console.log("Exibir os itens\n");
+    console.log(resultado);
 
-// Exibir os itens da Lista com Arrow Functions
-numeros.forEach(numero => console.log(numero));
+} catch (error) {
+    // Captura o erro e informa ao usuário
+    console.error("Não é possível converter para letras maiúsculas!");
+}
+
+// Função para formatar uma string com todas as letras maiúsculas
+function converte(conteudo){
+    return conteudo.toUpperCase();
+}
